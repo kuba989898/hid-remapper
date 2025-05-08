@@ -8,7 +8,9 @@
 
 #define FEATHER_HOST_BOARD
 
-#define GPIO_VALID_PINS_BASE 0b00111100000000001100000111111111
+#define GPIO_VALID_PINS_BASE 0b00000011111111101111111111100000
+///////////////////////////////10987654321098765432109876543210
+///////////////////////////////3322222222221111111111
 
 // On some samples, the xosc can take longer to stabilize than is usual
 #ifndef PICO_XOSC_STARTUP_DELAY_MULTIPLIER
@@ -21,11 +23,11 @@
 #endif
 
 #ifndef PICO_DEFAULT_UART_TX_PIN
-#define PICO_DEFAULT_UART_TX_PIN 12
+#define PICO_DEFAULT_UART_TX_PIN 0
 #endif
 
 #ifndef PICO_DEFAULT_UART_RX_PIN
-#define PICO_DEFAULT_UART_RX_PIN 13
+#define PICO_DEFAULT_UART_RX_PIN 1
 #endif
 
 //------------- LED -------------//
@@ -46,7 +48,7 @@
 #endif
 
 #ifndef PICO_FLASH_SIZE_BYTES
-#define PICO_FLASH_SIZE_BYTES (8 * 1024 * 1024)
+#define PICO_FLASH_SIZE_BYTES (2 * 1024 * 1024)
 #endif
 
 #ifndef PICO_RP2040_B0_SUPPORTED
@@ -56,11 +58,11 @@
 // --- PIO USB ---
 
 #ifndef PICO_DEFAULT_PIO_USB_DP_PIN
-#define PICO_DEFAULT_PIO_USB_DP_PIN 10
+#define PICO_DEFAULT_PIO_USB_DP_PIN 2
 #endif
 
 #ifndef PICO_DEFAULT_PIO_USB_VBUSEN_PIN
-#define PICO_DEFAULT_PIO_USB_VBUSEN_PIN 9
+#define PICO_DEFAULT_PIO_USB_VBUSEN_PIN 4
 #endif
 
 #ifndef PICO_DEFAULT_PIO_USB_VBUSEN_STATE

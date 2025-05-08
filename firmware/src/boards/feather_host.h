@@ -30,11 +30,11 @@
 
 //------------- LED -------------//
 #ifndef PICO_DEFAULT_LED_PIN
-#define PICO_DEFAULT_LED_PIN 0
+#define PICO_DEFAULT_LED_PIN 17
 #endif
 
 #ifndef PICO_DEFAULT_WS2812_PIN
-#define PICO_DEFAULT_WS2812_PIN 21
+#define PICO_DEFAULT_WS2812_PIN 16
 #endif
 
 // --- FLASH ---
